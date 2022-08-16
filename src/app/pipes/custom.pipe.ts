@@ -10,7 +10,7 @@ export class CustomPipe implements PipeTransform {
       value = value / 1000;
       return currencyType + value.toFixed(digitsNumber);
     } else {
-      return value.toFixed(digitsNumber) + currencyType;
+      return value.toFixed(digitsNumber) + currencyType
     }
   }
 
